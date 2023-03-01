@@ -29,10 +29,10 @@ class PygAnimation(object):
         self._rate = 1.0
         self._visibility = True
 
-        self._playingStartTime = 0 # the time that the play() function was last called.
-        self._pausedStartTime = 0 # the time that the pause() function was last called.
+        self._playingStartTime = 0
+        self._pausedStartTime = 0
 
-        if frames != '_copy': # ('_copy' is passed for frames by the getCopies() method)
+        if frames != '_copy':
             self.numFrames = len(frames)
             assert self.numFrames > 0, 'Must contain at least one frame.'
             for i in range(self.numFrames):
@@ -50,8 +50,7 @@ class PygAnimation(object):
 
 
     def _getStartTimes(self):
-        # Internal method to get the start times based off of the _durations list.
-        # Don't call this method.
+
         startTimes = [0]
         for i in range(self.numFrames):
             startTimes.append(startTimes[-1] + self._durations[i])
