@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+
 # -*- coding: utf-8 -*-
 
 from pygame import *
-import animation
+import animation as optimize
 import os
 
 MONSTER_WIDTH = 32
