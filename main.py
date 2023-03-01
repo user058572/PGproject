@@ -1,6 +1,6 @@
 import pygame
 
-from platformerhabrahabr import Game
+from Game import Game
 pygame.init()
 g = Game()
 

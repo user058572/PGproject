@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from pygame import *
-import optimize
+import animation
 import os
 
 MONSTER_WIDTH = 32

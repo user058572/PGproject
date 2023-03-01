@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from pygame import *
-import optimize as pyganim
+import animation as pyganim
 import os
 import blocks
 import monsters
